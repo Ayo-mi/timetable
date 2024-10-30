@@ -17,7 +17,7 @@ if(isset($update))
               <div class="row">
 <div class="col-md-5"> 
            
-               <h2>Update Teacher</h2>
+               <h2>Update Lecturer</h2>
 <form method="POST" enctype="multipart/form-data">
   <table border="0" cellspacing="5" cellpadding="5" class="table">
   <tr>
@@ -72,7 +72,7 @@ if(isset($update))
 
   
    <tr>
-    <th width="237" scope="row">Teacher Name </th>
+    <th width="237" scope="row">Lecture Name </th>
     <td width="213"><input type="text" name="n" class="form-control" value="<?php echo $res['name'];?>"/></td>
   </tr>
   

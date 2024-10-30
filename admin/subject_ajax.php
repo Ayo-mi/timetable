@@ -1,4 +1,4 @@
-<option value="" selected="selected" disabled="disabled">Select subject</option>
+<option value="" selected="selected" disabled="disabled">Select course</option>
 <?php 
 include('../config.php');
 $q=mysqli_query($con,"select * from  subject where sem_id='".$_GET['id']."'");

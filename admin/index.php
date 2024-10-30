@@ -123,7 +123,6 @@ if(isset($save))
     <!-- Plugin JavaScript -->
     
     <script src="../js/owl.carousel.js"></script>
-                         
 
     </body>
 </html>

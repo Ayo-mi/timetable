@@ -90,7 +90,7 @@ xmlhttp2.send();
 
 <div class="row">
 <div class="col-sm-8">
-<h2>Update subject</h2>
+<h2>Update Course</h2>
 <form method="POST" enctype="multipart/form-data">
   <table border="0" class="table">
   <tr>
@@ -143,7 +143,7 @@ xmlhttp2.send();
 	</tr>
 
 	<tr>
-    <th width="237" scope="row">Select Teacher</th>
+    <th width="237" scope="row">Select Lecturer</th>
     <td width="213">
 	<select name="t" id="teacher" class="form-control"/>
     <option disabled selected >Select Teacher</option>

@@ -139,7 +139,7 @@ xmlhttp.send();
 	</tr>
 	
    <tr>
-    <th width="237" scope="row">Subject Name </th>
+    <th width="237" scope="row">Course Name </th>
     <td width="213">
     <select name="subname" id="subject" class="form-control">
 	<?php	
@@ -161,7 +161,7 @@ xmlhttp.send();
   </tr>
   
   <tr>
-    <th width="237" scope="row">Teacher </th>
+    <th width="237" scope="row">Lecturer </th>
     <td width="213">
 	<select name="teacher" id="teacherid" onchange="showTeacher(this.value)" class="form-control">
 	<?php

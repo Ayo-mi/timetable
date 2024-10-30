@@ -63,13 +63,13 @@ $_SESSION=$res;
                         <a href="admindashboard.php?info=semester"><i class="fa fa-fw fa-bar-chart-o"></i>Semester</a>
                     </li>
                     <li>
-                        <a href="admindashboard.php?info=subject"><i class="fa fa-fw fa-table"></i>Subject</a>
+                        <a href="admindashboard.php?info=subject"><i class="fa fa-fw fa-table"></i>Course</a>
                     </li>
                     <li>
-                        <a href="admindashboard.php?info=student"><i class="fa fa-fw fa-edit"></i>Student</a>
+                        <!-- <a href="admindashboard.php?info=student"><i class="fa fa-fw fa-edit"></i>Student</a> -->
                     </li>
                     <li>
-                        <a href="admindashboard.php?info=teacher"><i class="fa fa-fw fa-desktop"></i>Teacher</a>
+                        <a href="admindashboard.php?info=teacher"><i class="fa fa-fw fa-desktop"></i>Lecturer</a>
                     </li>
                     
                     <li>

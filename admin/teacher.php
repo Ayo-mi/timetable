@@ -17,7 +17,7 @@ echo "<table border='1' class='table'>";
 
 echo "<tr class='danger'><th colspan='11'><a href='admindashboard.php?info=add_teacher'>Add New</a></th></tr>";
 
-echo "<Tr><th>Teacher Id</th><th>Teacher Name</th><th>Email</th><th>Password</th><th>Mobile</th>
+echo "<Tr><th>Lecturer Id</th><th>Lecturer Name</th><th>Email</th><th>Password</th><th>Mobile</th>
 <th>Address</th><th>Department</th><th>Update</th><th>Delete</th></tr>";
 
 	$que=mysqli_query($con,"select *  from teacher");

@@ -1,4 +1,4 @@
-<option value="" selected="selected" disabled="disabled">Select Teacher</option>
+<option value="" selected="selected" disabled="disabled">Select Lecturer</option>
 <?php 
 include('../config.php');
 $q=mysqli_query($con,"select * from  teacher where department_id='".$_GET['id']."'");

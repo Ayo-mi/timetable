@@ -91,7 +91,7 @@ xmlhttp2.send();
 
 <div class="row">
 <div class="col-md-8">
-<h2>Add Subject</h2>
+<h2>Add Course</h2>
 <form method="POST" enctype="multipart/form-data">
   <table border="0" cellspacing="5" cellpadding="5" class="table">
   <tr>
@@ -138,10 +138,10 @@ xmlhttp2.send();
   </tr>
 
   <tr>
-    <th width="237" scope="row">Select Teacher</th>
+    <th width="237" scope="row">Select Lecturer</th>
     <td width="213">
 	<select name="t" id="teacher" class="form-control"/>
-    <option disabled selected >Select Teacher</option>
+    <option disabled selected >Select Lecturer</option>
     
     <?php
 	$sub=mysqli_query($con,"select * from teacher where department_id='".$res['department_id']."'");
@@ -160,7 +160,7 @@ xmlhttp2.send();
   </tr>
 
   <tr>
-    <th width="237" scope="row">Subject Name </th>
+    <th width="237" scope="row">Lecturer Name </th>
     <td width="213"><input type="text" name="subname" class="form-control"/></td>
   </tr>
   <tr>

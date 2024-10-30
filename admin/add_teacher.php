@@ -85,7 +85,7 @@ function showcourse( str )
 
 <div class = 'row'>
 <div class = 'col-md-10'>
-<h2>Add Teacher</h2>
+<h2>Add Lecturer</h2>
 <form method = 'POST' enctype = 'multipart/form-data'>
 <table border = '0' class = 'table'>
 <tr>
@@ -132,7 +132,7 @@ while( $s = mysqli_fetch_array( $t ) )
 </tr> -->
 
 <tr>
-<th width = '237' scope = 'row'>Teacher Name </th>
+<th width = '237' scope = 'row'>Lecturer Name </th>
 <td width = '213'><input type = 'text' name = 'n' class = 'form-control' placeholder = 'enter name'/></td>
 </tr>
 <tr>
