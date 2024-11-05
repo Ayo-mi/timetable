@@ -7,7 +7,7 @@ extract($_POST);
 if(isset($update))
 {	 
 
-	mysqli_query($con,"update department set department_name='$c' where department_id='$department_id' ");
+	mysqli_query($con,"update department set department_name='$c', venue='$v' where department_id='$department_id' ");
 	
 	$err= "Records updated";
 	
@@ -19,7 +19,7 @@ if(isset($update))
 
 <div class="row">
 <div class="col-md-5">
-               <h2>Update Course</h2>
+               <h2>Update Department</h2>
 <form method="POST" enctype="multipart/form-data">
   <table border="0" cellspacing="5" cellpadding="5" class="table">
   <tr>
@@ -27,8 +27,12 @@ if(isset($update))
   </tr>
   
    <tr>
-    <th width="237" scope="row">Course Name </th>
+    <th width="237" scope="row">Department Name </th>
     <td width="213"><input type="text" name="c" class="form-control" value="<?php echo $res['department_name'];?>"/></td>
+  </tr>
+  <tr>
+    <th width="237" scope="row">Lecture Venue </th>
+    <td width="213"><input type="text" name="v" class="form-control" value="<?php echo $res['venue'];?>"/></td>
   </tr>
    <tr>
     <th colspan="2" scope="row" align="center">

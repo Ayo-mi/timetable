@@ -2,7 +2,7 @@
 
 function generate_time_table( $con, $courseid, $s ) {
 
-    $query = "select * from subject where department_id = $courseid and sem_id = $s";
+    $query = "select * from subject where department_id = $courseid and sem_id = $s;";
     $que = mysqli_query( $con, $query );
     $rows = mysqli_num_rows( $que );
 

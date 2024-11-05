@@ -11,7 +11,7 @@ $row=mysqli_num_rows($que);
 	}
 	else
 	{
-mysqli_query($con,"insert into department values(null,'$c')");	
+mysqli_query($con,"insert into department (venue, department_name) values('$v', '$c')");	
 
 	$err="<font color='blue'>Congrats Your Data Saved!!!</font>";
 	}
@@ -31,6 +31,10 @@ mysqli_query($con,"insert into department values(null,'$c')");
    <tr>
     <th width="237" scope="row">Department Name </th>
     <td width="213"><input type="text" name="c" class="form-control"/></td>
+  </tr>
+  <tr>
+    <th width="237" scope="row">Lecture Venue </th>
+    <td width="213"><input type="text" name="v" class="form-control"/></td>
   </tr>
   <tr>
     <td colspan="2" align="center">

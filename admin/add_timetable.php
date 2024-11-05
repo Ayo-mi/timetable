@@ -171,17 +171,20 @@ xmlhttp.send();
 
     if($weekTimeTable){
 
+      $queryy = "select venue from department where department_id = $courseid";
+      $quee=mysqli_query($con, $queryy);
+      $roww = mysqli_fetch_assoc($quee);
       echo "<table border='1' class='table'>";
   
       echo "<tr class='danger text-center'>
       <th class='text-center'>Days/Lecture</th>
-      <th class='text-center'>Lecture 1<br>08:00-09:00</th>
-      <th class='text-center'>Lecture 2<br>09:00-10:00</th>
-      <th class='text-center'>Lecture 3<br>10:00-11:00</th>
-      <th class='text-center'>Lecture 4<br>11:00-12:00</th>
+      <th class='text-center'>Lecture 1<br>08:00-09:00<br>".$roww['venue']."</th>
+      <th class='text-center'>Lecture 2<br>09:00-10:00<br>".$roww['venue']."</th>
+      <th class='text-center'>Lecture 3<br>10:00-11:00<br>".$roww['venue']."</th>
+      <th class='text-center'>Lecture 4<br>11:00-12:00<br>".$roww['venue']."</th>
       <th class='text-center'>Break</th>
-      <th class='text-center'>Lecture 5<br>13:00-15:00</th>
-      <th class='text-center'>Lecture 6<br>15:00-17:00</th>";
+      <th class='text-center'>Lecture 5<br>13:00-15:00<br>".$roww['venue']."</th>
+      <th class='text-center'>Lecture 6<br>15:00-17:00<br>".$roww['venue']."</th>";
   
       for($i = 0; $i < 5; $i++){
         echo "<tr>";
